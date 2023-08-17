@@ -7,38 +7,36 @@ function getTextToNumber (x){
     return parseFloat(x.innerText)
 }
 function getInputTextToNumber (x){
+    console.log(parseFloat(x.value))
+    console.log(isNaN(parseFloat(x.value)))
     let amount = ""
     let sum = 0;
     if ( x.value == "" || x.value == undefined || x.value < 0 ){
-        //alert("Please set Amount")
         document.getElementById("aChack_img").src = ".././img/payment.png"
         document.getElementById("aChack_Text").innerText = "Please Set You'r Amount"
         document.getElementById("money_Error").style.display = "block"
         amount = sum
-    }else{
+    }else if (isNaN ( parseFloat(x.value) )){
+        document.getElementById("aChack_img").src = ".././img/payment.png"
+        document.getElementById("aChack_Text").innerText = "Please Set You'r Amount"
+        document.getElementById("money_Error").style.display = "block"
+        amount = sum
+    }
+    else{
         amount = x.value
     }
     x.value = ""
+    
     return parseFloat(amount)
 }
 function amountChack(a, b, c){
     let sum = 0;
     if(a < b){
-        //alert("You'r Balance is Low")
         document.getElementById("aChack_img").src = ".././img/lowb.png"
         document.getElementById("aChack_Text").innerText = "You'r Balance is Too Low"
         document.getElementById("money_Error").style.display = "block"
         sum = a
-    }
-    // else if(wA.value == undefined){
-    //     //alert("You'r Balance is Low")
-    //     document.getElementById("money_Error").style.display = "block"
-    //     document.getElementById("aChack_img").src = ".././img/payment.png"
-    //     document.getElementById("aChack_Text").innerText = "Please set You'r Amount And Then Withdraw"
-        
-    //     sum = a
-    // }
-    else{
+    }else{
         sum = a-b
         let tW = c + b
         setAmount(Ws, tW)

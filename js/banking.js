@@ -19,5 +19,4 @@ document.getElementById("Withdraw_btn").addEventListener("click", () =>{
 document.getElementById("error_close2").addEventListener("click", even =>{
     let dnon = even.target.parentElement.parentNode.parentElement.parentElement.parentElement
     dnon.style.display = "none"
-    //console.log(even.target.parentElement.parentNode.parentElement.parentElement.parentElement)
 })
