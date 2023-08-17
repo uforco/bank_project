@@ -10,7 +10,7 @@ function validetion(){
             document.getElementById("error_text").innerHTML = "Please Chack You'r Email <br> invalid Email"
             document.getElementById("error_pop").style.display = "flex"
             closetimeOut()
-        }else if(password !== "Sharif1234"){
+        }else if(password !== "12345"){
             document.getElementById("error_img").src = ".././img/passerror.png"
             document.getElementById("error_text").innerHTML = "Please Chack You'r Password <br> invalid Email"
             document.getElementById("error_pop").style.display = "flex"
