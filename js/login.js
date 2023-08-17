@@ -8,7 +8,7 @@ document.getElementById('submit').addEventListener("click", even => {
             document.getElementById("error_img").src = ".././img/emailerror.png"
             document.getElementById("error_text").innerHTML = "Please Chack You'r Email <br> invalid Email"
             document.getElementById("error_pop").style.display = "flex"
-        }else if(password !== "Sharif1234"){
+        }else if(password !== "1234"){
             document.getElementById("error_img").src = ".././img/passerror.png"
             document.getElementById("error_text").innerHTML = "Please Chack You'r Password <br> invalid Email"
             document.getElementById("error_pop").style.display = "flex"
