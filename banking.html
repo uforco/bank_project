@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/banklogo.png" type="image/x-icon">
+    <title>Banking page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-theme="light">
+    <section class="cover_bg bg-[url('./img/fullbgcover.jpg')]">
+        <div class="container mx-auto">
+            <div class="h-screen">
+                <div class="flex justify-center items-center h-full">
+                    <div class="relative overflow-hidden">
+                        <div>
+                            <div class="grid grid-flow-col col-span-3 p-3 gap-4">
+                                <div class="w-72 overflow-hidden p-6 px-16 rounded-md bg-[#ffc048]">
+                                    <h3 class="text-2xl py-2 font-extrabold text-white">Deposit</h3>
+                                    <p class="text-xl py-1 font-bold text-white">$<span id="Deposit_show">00</span></p>
+                                </div>
+                                <div class="w-72 overflow-hidden p-6 px-16 rounded-md bg-[#ef5777]">
+                                    <h3 class="text-2xl py-2 font-extrabold text-white">Withdraw</h3>
+                                    <p class="text-xl py-1 font-bold text-white">$<span id="Withdraw_show">00</span></p>
+                                </div>
+                                <div class="w-72 overflow-hidden p-6 px-16 rounded-md bg-[#575fcf]">
+                                    <h3 class="text-2xl py-2 font-extrabold text-white">Total Balance</h3>
+                                    <p class="text-xl py-1 font-bold text-white">$<span id="Total_show">00</span></p>
+                                </div>
+                            </div>
+                            <div class="grid grid-flow-col p-3 col-span-2 gap-4">
+                                <div class=" overflow-hidden p-8 px-16 rounded-md bg-[#0be881]">
+                                    <h3 class="text-2xl pb-6 font-extrabold text-white">Deposit</h3>
+                                    <input id="deposit_Amount" type="text" placeholder="$ Deposit Amount" class="input input-bordered w-full max-w-xs" />
+                                    <button id="Deposit_btn" class="btn btn-outline btn-primary mt-3">Deposit</button>
+                                </div>
+                                <div class=" overflow-hidden p-8 px-16 rounded-md bg-[#808e9b]">
+                                    <h3 class="text-2xl pb-6 font-extrabold text-white">Withdraw</h3>
+                                    <input  id="withdraw_Amount" type="text" placeholder="$ Withdraw Amount" class="input input-bordered w-full max-w-xs" />
+                                    <button id="Withdraw_btn" class="btn btn-outline btn-primary mt-3">Withdraw</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- money Error -->
+                        <div id="money_Error" class="absolute w-full h-full left-0 top-0 hidden ">
+                            <div class="w-full h-full overflow-hidden ">
+                                <div class="relative w-full h-full">
+                                    <div class="p-5 absolute w-2/4 h-2/4 top-1/4 left-1/4 shadow-md shadow-sky-400 bg-slate-800 rounded-lg">
+                                        <div class="flex flex-col justify-center items-center gap-2">
+                                            <img id="aChack_img" src="./img/payment.png" alt="">
+                                            <p id="aChack_Text" class="text-white text-xl"></p>
+                                            <button id="error_close2" class="btn btn-warning mt-4">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- money Error -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/utiliy.js"></script>
+    <script src="./js/banking.js"></script>
+</body>
+</html>
