@@ -22,6 +22,7 @@ function validetion(){
 document.getElementById('submit').addEventListener("click", () => {
     validetion()
 })
+
 document.getElementById("error_close").addEventListener("click", even => {
     let error_ph = even.target.parentElement.parentNode
     error_ph.style.display = "none"
