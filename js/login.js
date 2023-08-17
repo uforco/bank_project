@@ -22,5 +22,4 @@ document.getElementById('submit').addEventListener("click", even => {
 document.getElementById("error_close").addEventListener("click", even => {
     let error_ph = even.target.parentElement.parentNode
     error_ph.style.display = "none"
-    //console.log(even.target.parentElement.parentNode)
 })
