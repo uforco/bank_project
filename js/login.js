@@ -9,8 +9,7 @@ function validetion(){
             document.getElementById("error_img").src = ".././img/emailerror.png"
             document.getElementById("error_text").innerHTML = "Please Chack You'r Email <br> invalid Email"
             document.getElementById("error_pop").style.display = "flex"
-            closetimeOut()
-        }else if(password !== "1234"){
+        }else if(password !== "Sharif1234"){
             document.getElementById("error_img").src = ".././img/passerror.png"
             document.getElementById("error_text").innerHTML = "Please Chack You'r Password <br> invalid Email"
             document.getElementById("error_pop").style.display = "flex"
@@ -23,17 +22,7 @@ function validetion(){
 document.getElementById('submit').addEventListener("click", () => {
     validetion()
 })
-function closetimeOut(x){
-    document.getElementById("error_close").addEventListener("click", even => {
-        if(typeof even.target === x){
-            let error_ph = even.target.parentElement.parentNode
-            error_ph.style.display = "none"
-            window.setTimeout(()=>{
-                window.location.reload()
-            },)
-        }else{
-            let error_ph = even.target.parentElement.parentNode
-            error_ph.style.display = "none"
-        }
-    })
-}
+document.getElementById("error_close").addEventListener("click", even => {
+    let error_ph = even.target.parentElement.parentNode
+    error_ph.style.display = "none"
+})
