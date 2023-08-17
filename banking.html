@@ -11,25 +11,25 @@
 <body>
     <section class="bg-cover bg-no-repeat bg-[url('./img/fullbgcover.jpg')]">
         <div class="container mx-auto">
-            <div class="h-screen">
+            <div class="h-auto md:h-screen py-10 md:py-0">
                 <div class="flex justify-center items-center h-full">
                     <div class="relative overflow-hidden">
                         <div>
-                            <div class="grid grid-flow-col col-span-3 p-3 gap-4">
-                                <div class="w-72 overflow-hidden p-6 px-16 rounded-md bg-[#ffc048]">
-                                    <h3 class="text-2xl py-2 font-extrabold text-white">Deposit</h3>
+                            <div class="grid grid-flow-row md:grid-flow-col col-span-3 p-3 gap-4">
+                                <div class=" overflow-hidden p-6 px-5 md:px-16 rounded-md bg-[#ffc048]">
+                                    <h3 class="text-xl py-2 font-extrabold text-white">Deposit</h3>
                                     <p class="text-xl py-1 font-bold text-white">$<span id="Deposit_show">00</span></p>
                                 </div>
-                                <div class="w-72 overflow-hidden p-6 px-16 rounded-md bg-[#ef5777]">
-                                    <h3 class="text-2xl py-2 font-extrabold text-white">Withdraw</h3>
+                                <div class=" overflow-hidden p-6 px-5 md:px-16 rounded-md bg-[#ef5777]">
+                                    <h3 class="text-xl py-2 font-extrabold text-white">Withdraw</h3>
                                     <p class="text-xl py-1 font-bold text-white">$<span id="Withdraw_show">00</span></p>
                                 </div>
-                                <div class="w-72 overflow-hidden p-6 px-16 rounded-md bg-[#575fcf]">
-                                    <h3 class="text-2xl py-2 font-extrabold text-white">Total Balance</h3>
+                                <div class=" overflow-hidden p-6 px-5 md:px-16 rounded-md bg-[#575fcf]">
+                                    <h3 class="text-xl py-2 font-extrabold text-white">Total Balance</h3>
                                     <p class="text-xl py-1 font-bold text-white">$<span id="Total_show">00</span></p>
                                 </div>
                             </div>
-                            <div class="grid grid-flow-col p-3 col-span-2 gap-4">
+                            <div class="grid grid-flow-row md:grid-flow-col p-3 col-span-2 gap-4">
                                 <div class=" overflow-hidden p-8 px-16 rounded-md bg-[#0be881]">
                                     <h3 class="text-2xl pb-6 font-extrabold text-white">Deposit</h3>
                                     <input id="deposit_Amount" type="text" placeholder="$ Deposit Amount" class="input input-bordered w-full max-w-xs" />
@@ -46,8 +46,8 @@
                         <div id="money_Error" class="absolute w-full h-full left-0 top-0 hidden ">
                             <div class="w-full h-full overflow-hidden ">
                                 <div class="relative w-full h-full">
-                                    <div class="p-5 absolute w-2/4 h-2/4 top-1/4 left-1/4 shadow-md shadow-sky-400 bg-slate-800 rounded-lg">
-                                        <div class="flex flex-col justify-center items-center gap-2">
+                                    <div class="p-16 md:p-5 md:py-12 absolute w-11/12 md:w-2/4 top-1/4 left-[4.44%] md:left-1/4 shadow-md shadow-sky-400 bg-slate-800 rounded-lg">
+                                        <div class="flex flex-col justify-center items-center gap-10 md:gap-2">
                                             <img id="aChack_img" src="./img/payment.png" alt="">
                                             <p id="aChack_Text" class="text-white text-xl"></p>
                                             <button id="error_close2" class="btn btn-warning mt-4">Close</button>
