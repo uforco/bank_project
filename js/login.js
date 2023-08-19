@@ -16,6 +16,7 @@ function validetion(){
             document.getElementById("error_img").src = ".././img/passerror.png"
             document.getElementById("error_text").innerHTML = "Please Chack You'r Password <br> invalid Email"
             document.getElementById("error_pop").style.display = "flex"
+            closetimeOut("object")
         }else{
             window.location.href = "./banking.html"
         }
@@ -38,7 +39,6 @@ password1.addEventListener('keyup', (e) =>{
     if(e.key === "Enter"){
         if(password1.value == ""){
             validetion()
-            closetimeOut()
         }else{
             document.getElementById('submit').click()
         }
