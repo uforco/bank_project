@@ -28,9 +28,7 @@ document.getElementById('withdraw_Amount').addEventListener('keyup', (e) =>{
         //console.log(e.target.value)
         document.getElementById("Withdraw_btn").click()
     }
-    
 })
-
 document.getElementById("error_close2").addEventListener("click", even =>{
     let dnon = even.target.parentElement.parentNode.parentElement.parentElement.parentElement
     dnon.style.display = "none"
