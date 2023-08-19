@@ -7,7 +7,6 @@ document.getElementById("Deposit_btn").addEventListener("click", () =>{
     let total_Amount = ts + da
     setAmount(tS, total_Amount)
 })
-
 document.getElementById("Withdraw_btn").addEventListener("click", () =>{
     let ws = getTextToNumber(Ws)
     let wa = getInputTextToNumber (wA)
@@ -24,28 +23,13 @@ document.getElementById('deposit_Amount').addEventListener('keyup', (e) =>{
     }
     
 })
-document.getElementById('Withdraw_btn').addEventListener('keyup', (e) =>{
+document.getElementById('withdraw_Amount').addEventListener('keyup', (e) =>{
     if(e.key === "Enter"){
         //console.log(e.target.value)
-        document.getElementById("Deposit_btn").click()
+        document.getElementById("Withdraw_btn").click()
     }
     
 })
-
-
-
-
-// let uptokey =  document.getElementById('deposit_Amount')
-
-// function keycodeEnter(x){
-//     document.getElementById(x).addEventListener('keyup', (e) =>{
-//         if(e.key === "Enter"){
-//             console.log(e.target.value)
-//         }
-        
-//     })
-// }
-// keycodeEnter(uptokey)
 
 document.getElementById("error_close2").addEventListener("click", even =>{
     let dnon = even.target.parentElement.parentNode.parentElement.parentElement.parentElement
