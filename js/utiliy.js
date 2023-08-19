@@ -3,12 +3,14 @@ let Ws = document.getElementById("Withdraw_show")
 let dA = document.getElementById("deposit_Amount")
 let wA = document.getElementById("withdraw_Amount")
 let tS = document.getElementById("Total_show")
+// keycodeEnter(dA)
+// keycodeEnter(wA)
 function getTextToNumber (x){
     return parseFloat(x.innerText)
 }
 function getInputTextToNumber (x){
-    console.log(parseFloat(x.value))
-    console.log(isNaN(parseFloat(x.value)))
+    // console.log(parseFloat(x.value))
+    // console.log(isNaN(parseFloat(x.value)))
     let amount = ""
     let sum = 0;
     if ( x.value == "" || x.value == undefined || x.value < 0 ){
